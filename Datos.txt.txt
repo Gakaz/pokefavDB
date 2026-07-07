@@ -8,3 +8,4 @@ Escuela de Arte Multimedial Da Vinci
 • COMISIÓN: dwm3ap
 • TURNO: Noche
 • FECHA DE ENTREGA: Martes 28 de abril de 2026
+• Web link: https://pokefav-db.vercel.app/index.html
