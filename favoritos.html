@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3761a8">
+    <meta name="description" content="Gestiona tus Pokémon favoritos en la colección guardada localmente.">
+    <base href="./">
+    <title>Favoritos - Bordiola - DWM3AP - 2026</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div id="logo">
+                <img src="pokeapi_256.png" alt="PokeApp Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-favs">
+            <h1>Tus Pokémon Favoritos</h1>
+            <p>Aquí se muestran los Pokémon que has guardado.</p>
+        </section>
+
+        <section id="favs-list" class="grid-pokemon"></section>
+    </main>
+
+    <footer>
+        <p>Bordiola | Aplicaciones Web Progresivas | Comisión DWM3AP | Turno Noche | 2026</p>
+        <p>Gastly el mejor pokemon de todos los tiempos.</p>
+    </footer>
+
+    <script src="js/appstorage.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderizarFavoritos();
+        });
+    </script>
+</body>
+</html>

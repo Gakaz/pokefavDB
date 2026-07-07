@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3761a8">
+    <meta name="description" content="Explora Pokémon, busca tus favoritos y accede a la información de cada especie desde una aplicación web progresiva.">
+    <base href="./">
+    <title>Bordiola - Estudiante - DWM3AP - 2026</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div id="logo">
+                <img src="pokeapi_256.png" alt="PokeApp Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h1>Explora el mundo Pokémon con PokeFav</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Busca un Pokémon por nombre o ID..." aria-label="Buscar Pokémon">
+                <button id="search-button" type="button">Buscar</button>
+            </div>
+        </section>
+
+        <div id="status-message" aria-live="polite"></div>
+
+        <section id="push-section" class="push-panel" aria-label="Notificaciones push">
+            <h2>Notificaciones push</h2>
+            <p id="push-status">Activa las notificaciones para recibir mensajes de prueba.</p>
+            <div class="push-actions">
+                <button id="push-permission-button" type="button">Activar notificaciones</button>
+                <button id="push-test-button" type="button">Enviar prueba</button>
+            </div>
+            <pre id="push-subscription-info">Sin suscripción activa.</pre>
+        </section>
+
+        <section id="pokemon-list" class="grid-pokemon"></section>
+
+        <div id="pagination">
+            <button id="prev-button" type="button" disabled>Anterior</button>
+            <span id="page-info">Página 1</span>
+            <button id="next-button" type="button">Siguiente</button>
+        </div>
+
+        <div id="modal-detalle" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="detalle-info">
+            <div class="modal-content">
+                <span class="close-button" aria-label="Cerrar detalle">&times;</span>
+                <div id="detalle-info"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Benjamin | Aplicaciones Web Progresivas | Comisión DWM3AP | Turno Noche | 2026</p>
+    </footer>
+
+    <script src="js/appstorage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+<!-- viva gastly -->

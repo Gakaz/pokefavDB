@@ -1,0 +1,16 @@
+{
+  "name": "PokeFav",
+  "short_name": "PokeFav",
+  "description": "Aplicación web progresiva para explorar y guardar Pokémon favoritos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#79607F",
+  "icons": [
+    {
+      "src": "pokeapi_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
